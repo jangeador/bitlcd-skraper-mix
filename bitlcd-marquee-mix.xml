@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Information ShortName="BitLCD Default Marquee" LongName="BitLCD Default Marquee" Description="2DBox + Screenshot + Wheel" Author="jangeador" />
+  <Viewport Color="#00FFFFFF" Width="1920" Height="360" />
+  <Drawings>
+    <Item Type="Screenshot">
+      <Display X="50%" Y="0%" Width="50%" Height="100%" Anchor="TopRight"/>
+      <Fallback Type="ScreenshotTitle">
+        <Fallback Type="SystemWallPaper">
+          <Children Reference="Parent">
+            <Item Type="Text" Text="No Screenshot!" TextColor="#FFFFFFFF" FontFamilly="Arial" FontSize="24" FontStyle="Bold" />
+          </Children>
+        </Fallback>
+      </Fallback>
+    </Item>
+    <Item Type="Wheel">
+      <Display X="100%" Y="100%" Width="50%" Height="30%" Anchor="BottomRight" Antialiasing="None" />
+      <Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic" />
+    </Item>
+  </Drawings>
+</ImageComposition>
+
