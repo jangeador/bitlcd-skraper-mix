@@ -5,7 +5,7 @@
   <Viewport Color="#00FFFFFF" Width="1920" Height="360" />
   <Drawings>
     <Item Type="Screenshot">
-      <Display X="50%" Y="0%" Width="50%" Height="100%" Anchor="TopRight"/>
+      <Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft"/>
       <Fallback Type="ScreenshotTitle">
         <Fallback Type="SystemWallPaper">
           <Children Reference="Parent">
@@ -15,7 +15,7 @@
       </Fallback>
     </Item>
     <Item Type="Wheel">
-      <Display X="100%" Y="100%" Width="50%" Height="30%" Anchor="BottomRight" Antialiasing="None" />
+      <Display X="100%" Y="100%" Width="100%" Height="100%" Anchor="BottomRight" Antialiasing="None" />
       <Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic" />
     </Item>
   </Drawings>
