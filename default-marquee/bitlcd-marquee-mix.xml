@@ -4,20 +4,28 @@
   <Information ShortName="BitLCD Default Marquee" LongName="BitLCD Default Marquee" Description="2DBox + Screenshot + Wheel" Author="jangeador" />
   <Viewport Color="#00FFFFFF" Width="1920" Height="360" />
   <Drawings>
-    <Item Type="Screenshot">
+    <!-- Game Box -->
+    <Item Type="Box2DFront">
       <Display X="0%" Y="0%" Width="100%" Height="100%" Anchor="TopLeft"/>
       <Fallback Type="ScreenshotTitle">
         <Fallback Type="SystemWallPaper">
           <Children Reference="Parent">
-            <Item Type="Text" Text="No Screenshot!" TextColor="#FFFFFFFF" FontFamilly="Arial" FontSize="24" FontStyle="Bold" />
+            <Item Type="Text" Text="No Screenshot!" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold" />
           </Children>
         </Fallback>
       </Fallback>
     </Item>
-    <Item Type="Wheel">
+    <!-- Screenshot on right -->
+    <Item Type="Screenshot">
       <Display X="100%" Y="100%" Width="100%" Height="100%" Anchor="BottomRight" Antialiasing="None" />
       <Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic" />
     </Item>
+    <!-- Main Logo (Wheel) -->
+    <Item Type="Marquee">
+      <Display X="50%" Y="50%" Width="100%" Height="100%" Anchor="VCenterHCenter" Antialiasing="None" />
+      <Fallback Type="Wheel">
+        <Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic" />
+      </Fallback>
+    </Item>
   </Drawings>
 </ImageComposition>
-
